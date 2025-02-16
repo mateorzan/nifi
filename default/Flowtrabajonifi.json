@@ -581,8 +581,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1016.0,
-        "y" : 128.0
+        "x" : -944.0,
+        "y" : 640.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
@@ -675,8 +675,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 128.0,
-        "y" : -288.0
+        "x" : -440.0,
+        "y" : -272.0
       },
       "properties" : {
         "filename" : "employees.csv",
@@ -748,8 +748,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 376.0,
-        "y" : 432.0
+        "x" : -520.0,
+        "y" : 448.0
       },
       "properties" : {
         "filename" : "employees_homes.csv",
@@ -821,8 +821,8 @@
       "name" : "QueryRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -728.0,
-        "y" : 464.0
+        "x" : -392.0,
+        "y" : 48.0
       },
       "properties" : {
         "SQL Query F" : "SELECT * FROM FLOWFILE WHERE gender = 'F'",
@@ -912,8 +912,8 @@
       "name" : "QueryDatabaseTable",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1072.0,
-        "y" : -296.0
+        "x" : -928.0,
+        "y" : -536.0
       },
       "properties" : {
         "Table Name" : "employees",
@@ -1100,8 +1100,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1000.0,
-        "y" : 768.0
+        "x" : -80.0,
+        "y" : 640.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
@@ -1403,8 +1403,8 @@
       "name" : "ConvertRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -224.0,
-        "y" : 120.0
+        "x" : -936.0,
+        "y" : 264.0
       },
       "properties" : {
         "Include Zero Record FlowFiles" : "true",
@@ -1462,8 +1462,8 @@
       "name" : "ConvertRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -464.0,
-        "y" : -288.0
+        "x" : -448.0,
+        "y" : -528.0
       },
       "properties" : {
         "Include Zero Record FlowFiles" : "true",
@@ -1521,8 +1521,8 @@
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 744.0,
-        "y" : -744.0
+        "x" : -928.0,
+        "y" : -808.0
       },
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
@@ -1952,8 +1952,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 136.0,
-        "y" : -728.0
+        "x" : -456.0,
+        "y" : -808.0
       },
       "properties" : {
         "filename" : "employees.avro",
@@ -2025,8 +2025,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 344.0,
-        "y" : 120.0
+        "x" : -936.0,
+        "y" : 456.0
       },
       "properties" : {
         "filename" : "employees.csv",
@@ -2098,8 +2098,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 384.0,
-        "y" : 768.0
+        "x" : -64.0,
+        "y" : 440.0
       },
       "properties" : {
         "filename" : "employees_mulleres.csv",
@@ -2171,8 +2171,8 @@
       "name" : "ConvertRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -432.0,
-        "y" : -728.0
+        "x" : -464.0,
+        "y" : -1048.0
       },
       "properties" : {
         "Include Zero Record FlowFiles" : "true",
@@ -2230,8 +2230,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1008.0,
-        "y" : 432.0
+        "x" : -528.0,
+        "y" : 640.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
@@ -2324,8 +2324,8 @@
       "name" : "QueryDatabaseTable",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1056.0,
-        "y" : -728.0
+        "x" : -928.0,
+        "y" : -1056.0
       },
       "properties" : {
         "Table Name" : "employees",
@@ -2512,8 +2512,8 @@
       "name" : "QueryDatabaseTable",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1256.0,
-        "y" : 448.0
+        "x" : -928.0,
+        "y" : 48.0
       },
       "properties" : {
         "Table Name" : "employees",
@@ -2701,8 +2701,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 768.0,
-        "y" : -288.0
+        "x" : -936.0,
+        "y" : -280.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
