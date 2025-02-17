@@ -1907,9 +1907,11 @@
         "y" : -688.0
       },
       "properties" : {
-        "Destination" : "flowfile-content",
+        "Destination" : "flowfile-attribute",
+        "idConcello" : "$.idConcello",
         "Max String Length" : "20 MB",
         "Return Type" : "auto-detect",
+        "nomeConcello" : "$.nomeConcello",
         "Null Value Representation" : "empty string",
         "Path Not Found Behavior" : "ignore"
       },
@@ -1919,6 +1921,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "Destination",
+          "sensitive" : false
+        },
+        "idConcello" : {
+          "displayName" : "idConcello",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "idConcello",
           "sensitive" : false
         },
         "Max String Length" : {
@@ -1933,6 +1942,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "Return Type",
+          "sensitive" : false
+        },
+        "nomeConcello" : {
+          "displayName" : "nomeConcello",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "nomeConcello",
           "sensitive" : false
         },
         "Null Value Representation" : {
