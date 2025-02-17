@@ -142,7 +142,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -1704.0,
-        "y" : -1288.0
+        "y" : -1240.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -230,7 +230,7 @@
       "name" : "InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1712.0,
+        "x" : -1704.0,
         "y" : -1032.0
       },
       "properties" : {
@@ -535,7 +535,7 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1720.0,
+        "x" : -1704.0,
         "y" : -616.0
       },
       "properties" : {
@@ -629,7 +629,7 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1728.0,
+        "x" : -1704.0,
         "y" : -832.0
       },
       "properties" : {
