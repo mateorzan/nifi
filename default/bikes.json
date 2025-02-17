@@ -610,6 +610,171 @@
     }, {
       "bulletinLevel" : "WARN",
       "bundle" : {
+        "artifact" : "nifi-aws-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.1.0"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-aws-service-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.1.0"
+        },
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
+      }, {
+        "bundle" : {
+          "artifact" : "nifi-aws-service-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.1.0"
+        },
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "97a3e91b-4738-3627-9c39-76600b874131",
+      "name" : "AWSCredentialsProviderControllerService",
+      "properties" : {
+        "default-credentials" : "false",
+        "Session Time" : "3600",
+        "assume-role-sts-signer-override" : "Default Signature",
+        "assume-role-sts-region" : "us-west-2",
+        "anonymous-credentials" : "true"
+      },
+      "propertyDescriptors" : {
+        "profile-name" : {
+          "displayName" : "Profile Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "profile-name",
+          "sensitive" : false
+        },
+        "Access Key" : {
+          "displayName" : "Access Key ID",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Access Key",
+          "sensitive" : true
+        },
+        "assume-role-proxy-configuration-service" : {
+          "displayName" : "Assume Role Proxy Configuration Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "assume-role-proxy-configuration-service",
+          "sensitive" : false
+        },
+        "default-credentials" : {
+          "displayName" : "Use Default Credentials",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "default-credentials",
+          "sensitive" : false
+        },
+        "Session Time" : {
+          "displayName" : "Assume Role Session Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Session Time",
+          "sensitive" : false
+        },
+        "assume-role-ssl-context-service" : {
+          "displayName" : "Assume Role SSL Context Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "assume-role-ssl-context-service",
+          "sensitive" : false
+        },
+        "assume-role-sts-signer-override" : {
+          "displayName" : "Assume Role STS Signer Override",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "assume-role-sts-signer-override",
+          "sensitive" : false
+        },
+        "custom-signer-class-name" : {
+          "displayName" : "Custom Signer Class Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "custom-signer-class-name",
+          "sensitive" : false
+        },
+        "Assume Role ARN" : {
+          "displayName" : "Assume Role ARN",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Assume Role ARN",
+          "sensitive" : false
+        },
+        "custom-signer-module-location" : {
+          "displayName" : "Custom Signer Module Location",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "custom-signer-module-location",
+          "resourceDefinition" : {
+            "cardinality" : "MULTIPLE",
+            "resourceTypes" : [ "DIRECTORY", "FILE" ]
+          },
+          "sensitive" : false
+        },
+        "Assume Role Session Name" : {
+          "displayName" : "Assume Role Session Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Assume Role Session Name",
+          "sensitive" : false
+        },
+        "assume-role-sts-endpoint" : {
+          "displayName" : "Assume Role STS Endpoint Override",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "assume-role-sts-endpoint",
+          "sensitive" : false
+        },
+        "assume-role-sts-region" : {
+          "displayName" : "Assume Role STS Region",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "assume-role-sts-region",
+          "sensitive" : false
+        },
+        "Secret Key" : {
+          "displayName" : "Secret Access Key",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Secret Key",
+          "sensitive" : true
+        },
+        "Credentials File" : {
+          "displayName" : "Credentials File",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Credentials File",
+          "resourceDefinition" : {
+            "cardinality" : "SINGLE",
+            "resourceTypes" : [ "FILE" ]
+          },
+          "sensitive" : false
+        },
+        "assume-role-external-id" : {
+          "displayName" : "Assume Role External ID",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "assume-role-external-id",
+          "sensitive" : false
+        },
+        "anonymous-credentials" : {
+          "displayName" : "Use Anonymous Credentials",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "anonymous-credentials",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderControllerService"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
         "artifact" : "nifi-dbcp-service-nar",
         "group" : "org.apache.nifi",
         "version" : "2.1.0"
@@ -2799,7 +2964,7 @@
           "name" : "Footer File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE", "TEXT" ]
+            "resourceTypes" : [ "TEXT", "FILE" ]
           },
           "sensitive" : false
         },
@@ -2817,7 +2982,7 @@
           "name" : "Demarcator File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE", "TEXT" ]
+            "resourceTypes" : [ "TEXT", "FILE" ]
           },
           "sensitive" : false
         },
@@ -2835,7 +3000,7 @@
           "name" : "Header File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE", "TEXT" ]
+            "resourceTypes" : [ "TEXT", "FILE" ]
           },
           "sensitive" : false
         },
@@ -3322,6 +3487,7 @@
         "Signer Override" : "Default Signature",
         "min-age" : "0 sec",
         "write-s3-user-metadata" : "false",
+        "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Listing Batch Size" : "100",
         "write-s3-object-tags" : "false",
         "Bucket" : "wirtz-mateo",
@@ -3627,6 +3793,7 @@
       "properties" : {
         "requester-pays" : "false",
         "Object Key" : "${s3.key}",
+        "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Signer Override" : "Default Signature",
         "Bucket" : "wirtz-mateo",
         "Communications Timeout" : "30 secs",
