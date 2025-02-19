@@ -1504,8 +1504,8 @@
       "name" : "SplitJson",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -2464.0,
-        "y" : -360.0
+        "x" : -2360.0,
+        "y" : -344.0
       },
       "properties" : {
         "Max String Length" : "20 MB",
@@ -2104,8 +2104,8 @@
       "name" : "AttributesToJSON",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1864.0,
-        "y" : -168.0
+        "x" : -1760.0,
+        "y" : -152.0
       },
       "properties" : {
         "Destination" : "flowfile-content",
@@ -3054,8 +3054,8 @@
       "name" : "InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -2464.0,
-        "y" : -560.0
+        "x" : -2360.0,
+        "y" : -544.0
       },
       "properties" : {
         "Request Content-Encoding" : "DISABLED",
@@ -3359,8 +3359,8 @@
       "name" : "EvaluateJsonPath",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -2464.0,
-        "y" : -176.0
+        "x" : -2360.0,
+        "y" : -160.0
       },
       "properties" : {
         "Destination" : "flowfile-attribute",
@@ -3482,8 +3482,8 @@
       "name" : "ListS3",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1864.0,
-        "y" : -552.0
+        "x" : -1760.0,
+        "y" : -536.0
       },
       "properties" : {
         "list-type" : "1",
@@ -3794,8 +3794,8 @@
       "name" : "FetchS3Object",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1864.0,
-        "y" : -360.0
+        "x" : -1760.0,
+        "y" : -344.0
       },
       "properties" : {
         "requester-pays" : "false",
@@ -3952,8 +3952,8 @@
       "name" : "PutMongo",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1848.0,
-        "y" : 16.0
+        "x" : -1744.0,
+        "y" : 32.0
       },
       "properties" : {
         "mongo-client-service" : "691d11ee-96a6-3c34-9893-53d367de1b0e",
