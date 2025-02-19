@@ -79,36 +79,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "01317297-e3ff-3be2-b3a9-b8acd461043d",
-        "name" : "PutS3Object",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b0c50520-c3a2-38bc-b17a-7d395f722adf",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "merged" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
-        "name" : "MergeContent",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "0a15088c-af95-3698-bc65-cee81e7e962a",
         "name" : "AttributesToJSON",
         "type" : "PROCESSOR"
@@ -259,6 +229,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "7b06e3f7-da57-39df-938d-6b246dea7325",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "482fa5d8-2005-3203-bf71-5f9786005018",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "merged" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
+        "name" : "MergeContent",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "fca239c6-88d1-35be-8ffe-0409739df5b0",
         "name" : "QueryRecord",
         "type" : "PROCESSOR"
@@ -319,6 +319,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
+        "name" : "MergeContent",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "35d4a52b-6076-38b9-999f-d9de8ca1ee95",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Response" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "0aec2c71-9537-3d05-8fca-5e35efc653e8",
+        "name" : "InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "8e8c60c2-987a-3a1b-886b-deb40e6443a3",
         "name" : "EvaluateJsonPath",
         "type" : "PROCESSOR"
@@ -349,43 +379,13 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "7b06e3f7-da57-39df-938d-6b246dea7325",
-        "name" : "UpdateAttribute",
+        "id" : "01317297-e3ff-3be2-b3a9-b8acd461043d",
+        "name" : "PutS3Object",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "1066a6ce-a1b0-32d7-8bc4-d5ae7337a519",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "Response" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "0aec2c71-9537-3d05-8fca-5e35efc653e8",
-        "name" : "InvokeHTTP",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
-        "name" : "MergeContent",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "31a6a2a3-bf0f-3ab8-a74c-2a2100eeccd0",
+      "identifier" : "f009b760-cd10-3710-82f8-47b4488c2c46",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -622,24 +622,24 @@
           "group" : "org.apache.nifi",
           "version" : "2.1.0"
         },
-        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
       }, {
         "bundle" : {
           "artifact" : "nifi-aws-service-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.1.0"
         },
-        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "97a3e91b-4738-3627-9c39-76600b874131",
       "name" : "AWSCredentialsProviderControllerService",
       "properties" : {
-        "default-credentials" : "false",
+        "default-credentials" : "true",
         "Session Time" : "3600",
         "assume-role-sts-signer-override" : "Default Signature",
         "assume-role-sts-region" : "us-west-2",
-        "anonymous-credentials" : "true"
+        "anonymous-credentials" : "false"
       },
       "propertyDescriptors" : {
         "profile-name" : {
@@ -712,7 +712,7 @@
           "name" : "custom-signer-module-location",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            "resourceTypes" : [ "FILE", "DIRECTORY" ]
           },
           "sensitive" : false
         },
@@ -898,7 +898,7 @@
           "name" : "database-driver-locations",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "URL", "DIRECTORY", "FILE" ]
+            "resourceTypes" : [ "FILE", "DIRECTORY", "URL" ]
           },
           "sensitive" : false
         },
@@ -1199,7 +1199,7 @@
       "name" : "InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -2432.0,
+        "x" : -2408.0,
         "y" : -1008.0
       },
       "properties" : {
@@ -1480,7 +1480,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "60 sec",
+      "schedulingPeriod" : "0 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
@@ -2194,8 +2194,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1848.0,
-        "y" : -1008.0
+        "x" : -1776.0,
+        "y" : -776.0
       },
       "properties" : {
         "filename" : "bicicoruna_${now():format('yyyyMMdd_HHmm')}.json",
@@ -2431,8 +2431,8 @@
       "name" : "PutS3Object",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -2432.0,
-        "y" : -832.0
+        "x" : -2416.0,
+        "y" : -776.0
       },
       "properties" : {
         "FullControl User List" : "${s3.permissions.full.users}",
@@ -2449,14 +2449,14 @@
         "Multipart Part Size" : "5 GB",
         "use-chunked-encoding" : "true",
         "Object Key" : "${filename}",
-        "AWS Credentials Provider service" : "99f1b06c-fdd2-3f5b-99a1-a5a031466a93",
+        "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Multipart Threshold" : "5 GB",
         "Bucket" : "wirt-mateo",
         "Multipart Upload AgeOff Interval" : "60 min",
         "use-path-style-access" : "false",
         "Write Permission User List" : "${s3.permissions.write.users}",
         "Communications Timeout" : "30 secs",
-        "Region" : "us-west-2",
+        "Region" : "us-east-1",
         "Read Permission User List" : "${s3.permissions.read.users}",
         "s3-temporary-directory-multipart" : "${java.io.tmpdir}"
       },
@@ -2545,7 +2545,7 @@
           "name" : "custom-signer-module-location",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            "resourceTypes" : [ "FILE", "DIRECTORY" ]
           },
           "sensitive" : false
         },
@@ -2624,6 +2624,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "Object Key",
+          "sensitive" : false
+        },
+        "AWS Credentials Provider service" : {
+          "displayName" : "AWS Credentials Provider Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "AWS Credentials Provider service",
           "sensitive" : false
         },
         "Multipart Threshold" : {
@@ -2859,8 +2866,8 @@
       "name" : "MergeContent",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1848.0,
-        "y" : -824.0
+        "x" : -1776.0,
+        "y" : -1008.0
       },
       "properties" : {
         "Keep Path" : "false",
@@ -3475,8 +3482,8 @@
       "name" : "ListS3",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1872.0,
-        "y" : -560.0
+        "x" : -1864.0,
+        "y" : -552.0
       },
       "properties" : {
         "list-type" : "1",
@@ -3490,7 +3497,7 @@
         "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Listing Batch Size" : "100",
         "write-s3-object-tags" : "false",
-        "Bucket" : "wirtz-mateo",
+        "Bucket" : "wirt-mateo",
         "Communications Timeout" : "30 secs",
         "Region" : "us-east-1",
         "use-versions" : "false"
@@ -3566,7 +3573,7 @@
           "name" : "custom-signer-module-location",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            "resourceTypes" : [ "FILE", "DIRECTORY" ]
           },
           "sensitive" : false
         },
@@ -3792,7 +3799,7 @@
       },
       "properties" : {
         "requester-pays" : "false",
-        "Object Key" : "${s3.key}",
+        "Object Key" : "${s3.objectKey}",
         "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Signer Override" : "Default Signature",
         "Bucket" : "wirtz-mateo",
@@ -3863,7 +3870,7 @@
           "name" : "custom-signer-module-location",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            "resourceTypes" : [ "FILE", "DIRECTORY" ]
           },
           "sensitive" : false
         },
