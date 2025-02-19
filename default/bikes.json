@@ -622,14 +622,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.1.0"
         },
-        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
       }, {
         "bundle" : {
           "artifact" : "nifi-aws-service-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.1.0"
         },
-        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "97a3e91b-4738-3627-9c39-76600b874131",
@@ -898,7 +898,7 @@
           "name" : "database-driver-locations",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+            "resourceTypes" : [ "URL", "DIRECTORY", "FILE" ]
           },
           "sensitive" : false
         },
@@ -1569,7 +1569,7 @@
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
         "put-db-record-unmatched-column-behavior" : "Fail on Unmatched Columns",
-        "put-db-record-catalog-name" : "meteo",
+        "put-db-record-catalog-name" : "bicis",
         "put-db-record-statement-type" : "UPSERT",
         "put-db-record-quoted-identifiers" : "false",
         "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
@@ -2964,7 +2964,7 @@
           "name" : "Footer File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "TEXT", "FILE" ]
+            "resourceTypes" : [ "FILE", "TEXT" ]
           },
           "sensitive" : false
         },
@@ -2982,7 +2982,7 @@
           "name" : "Demarcator File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "TEXT", "FILE" ]
+            "resourceTypes" : [ "FILE", "TEXT" ]
           },
           "sensitive" : false
         },
@@ -3000,7 +3000,7 @@
           "name" : "Header File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "TEXT", "FILE" ]
+            "resourceTypes" : [ "FILE", "TEXT" ]
           },
           "sensitive" : false
         },
@@ -3475,8 +3475,8 @@
       "name" : "ListS3",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1848.0,
-        "y" : -568.0
+        "x" : -1872.0,
+        "y" : -560.0
       },
       "properties" : {
         "list-type" : "1",
@@ -3956,7 +3956,7 @@
         "Mode" : "update",
         "Mongo Collection Name" : "estacions",
         "put-mongo-update-mode" : "doc",
-        "Mongo Database Name" : "meteo",
+        "Mongo Database Name" : "bicis",
         "Character Set" : "UTF-8"
       },
       "propertyDescriptors" : {
@@ -4067,7 +4067,7 @@
         "mongo-charset" : "UTF-8",
         "mongo-date-format" : "yyyy-MM-dd'T'HH:mm:ss'Z'",
         "json-type" : "Extended",
-        "Mongo Database Name" : "meteo",
+        "Mongo Database Name" : "bicis",
         "Mongo Collection Name" : "estacions",
         "use-pretty-printing" : "true",
         "get-mongo-send-empty" : "false"
@@ -4183,7 +4183,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
+      "schedulingPeriod" : "30 min",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.mongodb.GetMongo",
