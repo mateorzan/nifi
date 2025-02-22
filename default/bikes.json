@@ -199,36 +199,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "987f74d9-8e0c-3404-aa2f-ade90cfc8bd1",
-        "name" : "SplitJson",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "9185102b-1caf-372a-8740-7188b1014bf9",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "f3fe3bd9-6aa3-34c6-89ad-856f7459cb73",
-        "name" : "FetchS3Object",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "7b06e3f7-da57-39df-938d-6b246dea7325",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -248,6 +218,36 @@
         "groupId" : "flow-contents-group",
         "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
         "name" : "MergeContent",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "987f74d9-8e0c-3404-aa2f-ade90cfc8bd1",
+        "name" : "SplitJson",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9185102b-1caf-372a-8740-7188b1014bf9",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "f3fe3bd9-6aa3-34c6-89ad-856f7459cb73",
+        "name" : "FetchS3Object",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -319,36 +319,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
-        "name" : "MergeContent",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "35d4a52b-6076-38b9-999f-d9de8ca1ee95",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "Response" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "0aec2c71-9537-3d05-8fca-5e35efc653e8",
-        "name" : "InvokeHTTP",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "8e8c60c2-987a-3a1b-886b-deb40e6443a3",
         "name" : "EvaluateJsonPath",
         "type" : "PROCESSOR"
@@ -368,6 +338,36 @@
         "groupId" : "flow-contents-group",
         "id" : "987f74d9-8e0c-3404-aa2f-ade90cfc8bd1",
         "name" : "SplitJson",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "7e0bc88e-8458-32dc-bfdc-c6e1f3760738",
+        "name" : "MergeContent",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "35d4a52b-6076-38b9-999f-d9de8ca1ee95",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Response" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "0aec2c71-9537-3d05-8fca-5e35efc653e8",
+        "name" : "InvokeHTTP",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -409,36 +409,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "fca239c6-88d1-35be-8ffe-0409739df5b0",
-        "name" : "QueryRecord",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "75feba4c-83e9-38d3-ba24-70ce23a148db",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "split" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "108f72d2-0195-1000-75d0-e405bb8bc18a",
-        "name" : "SplitJson",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "cb0bd1e8-1efa-39bd-9270-741682284f68",
         "name" : "PutDatabaseRecord",
         "type" : "PROCESSOR"
@@ -461,13 +431,43 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "fca239c6-88d1-35be-8ffe-0409739df5b0",
+        "name" : "QueryRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "75feba4c-83e9-38d3-ba24-70ce23a148db",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "split" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "108f72d2-0195-1000-75d0-e405bb8bc18a",
+        "name" : "SplitJson",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
     } ],
     "controllerServices" : [ {
       "bulletinLevel" : "WARN",
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -475,7 +475,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.1.0"
+          "version" : "2.2.0"
         },
         "type" : "org.apache.nifi.serialization.RecordReaderFactory"
       } ],
@@ -612,7 +612,7 @@
       "bundle" : {
         "artifact" : "nifi-aws-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -620,16 +620,16 @@
         "bundle" : {
           "artifact" : "nifi-aws-service-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.1.0"
+          "version" : "2.2.0"
         },
-        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
       }, {
         "bundle" : {
           "artifact" : "nifi-aws-service-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.1.0"
+          "version" : "2.2.0"
         },
-        "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "97a3e91b-4738-3627-9c39-76600b874131",
@@ -777,7 +777,7 @@
       "bundle" : {
         "artifact" : "nifi-dbcp-service-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -785,7 +785,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.1.0"
+          "version" : "2.2.0"
         },
         "type" : "org.apache.nifi.dbcp.DBCPService"
       } ],
@@ -898,7 +898,7 @@
           "name" : "database-driver-locations",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "FILE", "DIRECTORY", "URL" ]
+            "resourceTypes" : [ "FILE", "URL", "DIRECTORY" ]
           },
           "sensitive" : false
         },
@@ -924,7 +924,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -932,7 +932,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.1.0"
+          "version" : "2.2.0"
         },
         "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
       } ],
@@ -1093,7 +1093,7 @@
       "bundle" : {
         "artifact" : "nifi-mongodb-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -1101,7 +1101,7 @@
         "bundle" : {
           "artifact" : "nifi-mongodb-client-service-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2.1.0"
+          "version" : "2.2.0"
         },
         "type" : "org.apache.nifi.mongodb.MongoDBClientService"
       } ],
@@ -1187,7 +1187,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1492,7 +1492,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1551,7 +1551,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1663,6 +1663,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "put-db-record-max-batch-size",
+          "sensitive" : false
+        },
+        "Database Dialect Service" : {
+          "displayName" : "Database Dialect Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Database Dialect Service",
           "sensitive" : false
         },
         "Data Record Path" : {
@@ -1787,7 +1794,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2092,7 +2099,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2182,7 +2189,7 @@
       "bundle" : {
         "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2255,7 +2262,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2314,7 +2321,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2419,7 +2426,7 @@
       "bundle" : {
         "artifact" : "nifi-aws-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2734,7 +2741,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2854,7 +2861,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2873,6 +2880,7 @@
         "Keep Path" : "false",
         "Merge Strategy" : "Bin-Packing Algorithm",
         "Attribute Strategy" : "Keep Only Common Attributes",
+        "FlowFile Insertion Strategy" : "Last in Bin",
         "Compression Level" : "1",
         "Maximum Number of Entries" : "60",
         "Minimum Group Size" : "0 B",
@@ -2913,6 +2921,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "Attribute Strategy",
+          "sensitive" : false
+        },
+        "FlowFile Insertion Strategy" : {
+          "displayName" : "FlowFile Insertion Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "FlowFile Insertion Strategy",
           "sensitive" : false
         },
         "Compression Level" : {
@@ -2971,7 +2986,7 @@
           "name" : "Footer File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE", "TEXT" ]
+            "resourceTypes" : [ "TEXT", "FILE" ]
           },
           "sensitive" : false
         },
@@ -2989,7 +3004,7 @@
           "name" : "Demarcator File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE", "TEXT" ]
+            "resourceTypes" : [ "TEXT", "FILE" ]
           },
           "sensitive" : false
         },
@@ -3000,6 +3015,13 @@
           "name" : "Correlation Attribute Name",
           "sensitive" : false
         },
+        "Bin Termination Check" : {
+          "displayName" : "Bin Termination Check",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Bin Termination Check",
+          "sensitive" : false
+        },
         "Header File" : {
           "displayName" : "Header",
           "dynamic" : false,
@@ -3007,7 +3029,7 @@
           "name" : "Header File",
           "resourceDefinition" : {
             "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE", "TEXT" ]
+            "resourceTypes" : [ "TEXT", "FILE" ]
           },
           "sensitive" : false
         },
@@ -3042,7 +3064,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3347,7 +3369,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3470,7 +3492,7 @@
       "bundle" : {
         "artifact" : "nifi-aws-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3493,10 +3515,10 @@
         "listing-strategy" : "timestamps",
         "Signer Override" : "Default Signature",
         "min-age" : "0 sec",
-        "write-s3-user-metadata" : "false",
+        "write-s3-user-metadata" : "true",
         "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Listing Batch Size" : "100",
-        "write-s3-object-tags" : "false",
+        "write-s3-object-tags" : "true",
         "Bucket" : "wirt-mateo",
         "Communications Timeout" : "30 secs",
         "Region" : "us-east-1",
@@ -3699,7 +3721,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3782,7 +3804,7 @@
       "bundle" : {
         "artifact" : "nifi-aws-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3799,10 +3821,10 @@
       },
       "properties" : {
         "requester-pays" : "false",
-        "Object Key" : "${s3.objectKey}",
+        "Object Key" : "${filename}",
         "AWS Credentials Provider service" : "97a3e91b-4738-3627-9c39-76600b874131",
         "Signer Override" : "Default Signature",
-        "Bucket" : "wirtz-mateo",
+        "Bucket" : "wirt-mateo",
         "Communications Timeout" : "30 secs",
         "Region" : "us-east-1"
       },
@@ -3940,7 +3962,7 @@
       "bundle" : {
         "artifact" : "nifi-mongodb-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4054,7 +4076,7 @@
       "bundle" : {
         "artifact" : "nifi-mongodb-nar",
         "group" : "org.apache.nifi",
-        "version" : "2.1.0"
+        "version" : "2.2.0"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
