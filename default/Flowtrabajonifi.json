@@ -254,36 +254,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "73244505-86cb-32d7-8b21-bbb384fa4d70",
-        "name" : "PutDynamoDBRecord",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "ef36bfa3-aaee-3729-b749-b8b777b5b613",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "original" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "73b25794-addd-324b-99b7-81937d679667",
-        "name" : "QueryRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "73b25794-addd-324b-99b7-81937d679667",
         "name" : "QueryRecord",
         "type" : "PROCESSOR"
@@ -513,6 +483,36 @@
         "groupId" : "flow-contents-group",
         "id" : "f0341ef2-b0ea-359b-a6c9-df843c5eef91",
         "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "73244505-86cb-32d7-8b21-bbb384fa4d70",
+        "name" : "PutDynamoDBRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "3ac2481b-74e3-31a6-a292-0d9ae5b57677",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "SQL Query" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "73b25794-addd-324b-99b7-81937d679667",
+        "name" : "QueryRecord",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -1194,8 +1194,8 @@
       "name" : "PutDynamoDBRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -88.0,
-        "y" : 1232.0
+        "x" : -304.0,
+        "y" : 1264.0
       },
       "properties" : {
         "Table Name" : "employees",
@@ -1310,7 +1310,7 @@
       "type" : "org.apache.nifi.processors.aws.dynamodb.PutDynamoDBRecord",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "failure" ],
+      "autoTerminatedRelationships" : [ "original", "failure" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -1328,12 +1328,13 @@
       "name" : "QueryRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -760.0,
-        "y" : 1248.0
+        "x" : -304.0,
+        "y" : 1048.0
       },
       "properties" : {
         "dbf-default-precision" : "10",
-        "record-writer" : "bd75b7e0-acda-3acb-a85a-100101e9e5b2",
+        "SQL Query" : "SELECT\n    emp_no,\n    MAX(first_name) AS first_name,\n    MAX(last_name) AS last_name,\n    MAX(gender) AS gender,\n    MAX(salary) AS salary,\n    MAX(dept_name) AS dept_name\nFROM FLOWFILE\nGROUP BY emp_no",
+        "record-writer" : "c86ab5b9-a2c4-34f9-a1d7-27b57fdb6f63",
         "record-reader" : "35405395-2c1f-35a4-b96d-6f9a0f1cb99d",
         "include-zero-record-flowfiles" : "true",
         "dbf-default-scale" : "0"
@@ -1344,6 +1345,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "dbf-default-precision",
+          "sensitive" : false
+        },
+        "SQL Query" : {
+          "displayName" : "SQL Query",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "SQL Query",
           "sensitive" : false
         },
         "record-writer" : {
@@ -1763,15 +1771,15 @@
       "name" : "QueryDatabaseTable",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1256.0,
-        "y" : 1240.0
+        "x" : -920.0,
+        "y" : 1048.0
       },
       "properties" : {
         "Table Name" : "employees",
-        "db-fetch-db-type" : "PostgreSQL",
+        "db-fetch-db-type" : "MySQL",
         "dbf-default-precision" : "10",
         "Max Wait Time" : "0 seconds",
-        "Database Connection Pooling Service" : "65fceb5a-e649-3d32-8dfa-7f4b6f71866a",
+        "Database Connection Pooling Service" : "50f8cd6a-4074-35e0-9e8f-f0c6080144bc",
         "dbf-user-logical-types" : "false",
         "qdbt-output-batch-size" : "1000",
         "qdbt-max-rows" : "0",
@@ -1779,7 +1787,7 @@
         "dbf-default-scale" : "0",
         "initial-load-strategy" : "Start at Beginning",
         "Fetch Size" : "0",
-        "db-fetch-sql-query" : "SELECT emp_no, first_name, last_name, gender, salary, dept_name FROM employees;",
+        "db-fetch-sql-query" : "SELECT \n  e.emp_no, \n  e.first_name, \n  e.last_name, \n  e.gender, \n  s.salary, \n  d.dept_name\nFROM employees e\nJOIN salaries s ON e.emp_no = s.emp_no \n  AND s.to_date = '9999-01-01'\nJOIN dept_emp de ON e.emp_no = de.emp_no\nJOIN departments d ON de.dept_no = d.dept_no",
         "dbf-normalize" : "false"
       },
       "propertyDescriptors" : {
